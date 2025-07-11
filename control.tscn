@@ -1,0 +1,229 @@
+[gd_scene load_steps=4 format=3 uid="uid://ewkikxpn5akf"]
+
+[ext_resource type="Script" uid="uid://bv7wsue8knk7d" path="res://KeyButton.gd" id="1_0fbet"]
+
+[sub_resource type="Theme" id="Theme_uchyk"]
+Button/font_sizes/font_size = 76
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_uchyk")
+
+[node name="TextContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.023
+anchor_right = 1.0
+anchor_bottom = 0.132
+offset_top = 0.159998
+offset_bottom = 0.440002
+grow_horizontal = 2
+alignment = 1
+
+[node name="NumberpadContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.356
+anchor_top = 0.348
+anchor_right = 0.702
+anchor_bottom = 0.95
+offset_left = 0.47998
+offset_top = 0.159973
+offset_right = 0.159912
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NumberpadContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="num_lk" type="Button" parent="NumberpadContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_0fbet")
+toggle_mode = true
+text = "num lk"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="slash" type="Button" parent="NumberpadContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "/"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_slash"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="asterisk" type="Button" parent="NumberpadContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "*"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_asterisk"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="dash" type="Button" parent="NumberpadContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_dash"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="NumberpadContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NumberpadContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button7" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "7"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_7"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="Button4" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "4"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_4"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="NumberpadContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button8" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "8"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_8"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="Button5" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "5"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_5"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="NumberpadContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button9" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "9"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_9"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="Button6" type="Button" parent="NumberpadContainer/HBoxContainer2/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "6"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_6"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="plus" type="Button" parent="NumberpadContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "+"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_plus"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="NumberpadContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NumberpadContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NumberpadContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button1" type="Button" parent="NumberpadContainer/HBoxContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "1"
+script = ExtResource("1_0fbet")
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="Button2" type="Button" parent="NumberpadContainer/HBoxContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "2"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_2"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="Button0" type="Button" parent="NumberpadContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "0"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_0"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NumberpadContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NumberpadContainer/HBoxContainer3/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="NumberpadContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "3"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_3"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="delete" type="Button" parent="NumberpadContainer/HBoxContainer3/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+text = "del"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_delete"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
+
+[node name="enter" type="Button" parent="NumberpadContainer/HBoxContainer3/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 40
+text = "enter"
+script = ExtResource("1_0fbet")
+corresponding_key = "nump_enter"
+metadata/_custom_type_script = "uid://bv7wsue8knk7d"
